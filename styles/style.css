@@ -16,9 +16,30 @@
   box-sizing: border-box;
 }
 
+
+
+@media (prefers-color-scheme: dark) {
+  body {
+    --title-color: #FF0070;
+    --accent-color: #FF0070;
+    --text-color: #F1B2CE;
+    --focus-color:  #DB00FF;
+    --bg-image: url(../images/cover-image-dark.png);
+  }
+} 
+
+@media (prefers-color-scheme: light) {
+  body {
+    --title-color: #353430;
+    --accent-color: #FF8DCB;
+    --text-color: #353430;
+    --focus-color:  #FFC2E6;
+    --bg-image: url(../images/cover-image-light.png);
+  }
+} 
+
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  /* min-inline-size: 375px; */
   min-inline-size: 375px;
   block-size: 100%;
   color: var(--title-color, #FF0070);
@@ -50,10 +71,14 @@ body:has(.header__theme-menu-button_type_dark:disabled) {
 
 
 .header {
-  position: relative;
+  position: relative; 
   display: grid; 
-  
+  grid-template-rows: 1fr auto 1fr;
+  align-items: center;
+  height: 100vh;
+  min-height: 667px;
 }
+
 /*
 .header_rec {
   position: relative; 
@@ -80,7 +105,7 @@ body:has(.header__theme-menu-button_type_dark:disabled) {
   justify-content: center;
 } */
 
-.decorated-zone::after{
+.decorated-zone::after {
   content: "";
   position: absolute;
   top: 0px;
@@ -91,7 +116,7 @@ body:has(.header__theme-menu-button_type_dark:disabled) {
   border-right: 1px solid var(--title-color);
 }
 
-.decorated-zone::before{
+.decorated-zone::before {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -103,7 +128,6 @@ body:has(.header__theme-menu-button_type_dark:disabled) {
 }
 
 .header__theme-menu-button {
-
   border: none;
   color: var(--title-color);
   background-color: transparent;
@@ -187,7 +211,7 @@ body:has(.header__theme-menu-button_type_dark:disabled) {
   position: relative;
   text-shadow: 4px 4px 0px  var(--accent-color);
 }
-.main_link:hover:after{
+.main_link:hover:after {
   position: absolute;
   content: '';
   left: 0;
@@ -198,12 +222,12 @@ body:has(.header__theme-menu-button_type_dark:disabled) {
   background: var(--text-color);
 }
 
-.main_link:focus{
+.main_link:focus {
   outline: 1px solid var(--title-color);
 }
 
-.main_title{
-  color: var(--title-color);;
+.main_title {
+  color: var(--title-color);
   font-family: var(--main-font, sans-serif);
   font-size: 18px;
   font-style: normal;
@@ -256,6 +280,7 @@ body:has(.header__theme-menu-button_type_dark:disabled) {
   grid-area: m_content3;
 }
 */
+
 button:focus {
   outline: none;
   text-decoration: underline;
@@ -264,9 +289,11 @@ button:focus {
 button:active, button:hover, button:default {
   outline: 1px solid var(--title-color);
 }
+button:disabled {
+  outline: 1px solid var(--title-color);
+}
 
 @media (width > 375px) {
-  
   .header_title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
@@ -299,15 +326,14 @@ button:active, button:hover, button:default {
      grid-row-end: 4;
 }
 
-.street {
-  grid-column-start: 2;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
+  .street {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
   .picture-list {
-
     width: 100%;
     height: 100%;
     flex-shrink: 0;
@@ -316,6 +342,15 @@ button:active, button:hover, button:default {
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
   }
+/*
+  .books {
+    width: 230px;
+    height: 230px;
+  } */
+
+  .header_text {
+    max-width: 364px;
+  }
 } 
 
 @media (width <= 375px){
@@ -323,6 +358,9 @@ button:active, button:hover, button:default {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
+  }
+  .header_text {
+    max-width: 355px;
   }
 }
 
@@ -345,8 +383,14 @@ button:active, button:hover, button:default {
   }
 
   .header_text {
-    width: 364px;
+    min-width: 364px;
+    max-width: 491px;
   }
+
+ /* .books {
+    width: 315px;
+    height: 315px;
+  }*/
 }
 
 @media (width >= 1024px) {
@@ -356,7 +400,7 @@ button:active, button:hover, button:default {
     gap: 20px;
   } 
   .header_text {
-    width: 491px;
+    min-width: 491px;
   }
 }  /*
   @media (min-width: 1024px) {

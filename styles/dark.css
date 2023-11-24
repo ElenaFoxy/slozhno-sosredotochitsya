@@ -34,6 +34,12 @@
     text-align: end;
   }
   
+  .header_rec::before {
+    content:"REC";
+    position: absolute;
+    margin-right: 28px;
+    color: var(--title-color, #FF0070);
+  }
   .header_rec::after {
     content:"";
     position: absolute;

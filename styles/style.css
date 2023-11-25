@@ -420,7 +420,7 @@ button:disabled {
     height: 100vh;
     min-height: 768px;
   }
-  
+
   .main_article_middle {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -436,9 +436,13 @@ button:disabled {
     margin-top: 59px;
   }
 
+  .header_title {
+    margin-top: 274px;
+  }
+
   .header__theme-menu-list {
     flex-direction: row;
-    align-items: flex-start;
+    margin: 0;
     justify-content: center;
   }
 }  /*

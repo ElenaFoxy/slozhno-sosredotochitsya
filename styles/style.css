@@ -179,7 +179,6 @@ body:has(.header__theme-menu-button_type_dark:disabled) {
 .header_text {
   min-width: 355px;
   display: flex;
-  justify-self: end;
   align-self: flex-end;
   font-size: 18px;
   font-weight: 700;
@@ -380,12 +379,11 @@ button:disabled {
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    margin-top: -26px;
   }
 
   .main_text {
     display: grid;
-    grid-template-columns: 1fr 472px;
+    grid-template-columns: 1fr 2fr;
     gap: 10px;
   }
 
@@ -398,9 +396,15 @@ button:disabled {
     grid-template-columns:  1fr;
     /*gap: 10px;*/
   }
-
+  
+  .main_title_middle {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+  
   .header_text {
     width: 364px;
+    margin-top: 162px;
   }
 
  /* .books {
@@ -415,8 +419,14 @@ button:disabled {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   } 
+  .main_title_middle {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .header_text {
     width: 491px;
+    margin-top: 162px;
   }
 }  /*
   @media (min-width: 1024px) {

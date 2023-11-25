@@ -75,41 +75,13 @@ body:has(.header__theme-menu-button_type_dark:disabled) {
   --bg-image: url(../images/cover-image-dark.png);
 }
 
-
 .header {
   position: relative;
   display: flex; 
   flex-direction: column;
-  /*grid-template-rows: 1fr 1fr 1fr;*/
   height: 100vh;
   min-height: 667px;
 }
-
-/*
-.header_rec {
-  position: relative; 
-  margin-right: 28px;
-  color: var(--title-color, #FF0070);
-  font-family: var(--main-font, sans-serif);
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 25px;
-  letter-spacing: 0em;
-  text-align: end;
-}
-
-.header_rec::after {
-  content:"";
-  position: absolute;
-  inline-size: 9px;
-  block-size: 9px;
-  margin: 8px 8px 0px 10px;
-  background-color: var(--title-color, #FF0070);
-  border-radius: 50%;
-  box-shadow: 0px 0px 4px #FF0070;
-  align-items: center;
-  justify-content: center;
-} */
 
 .decorated-zone::after {
   content: "";
@@ -273,21 +245,6 @@ body:has(.header__theme-menu-button_type_dark:disabled) {
   flex-shrink: 0;
   margin-top: 40px;
 }
-/*
-.main_title_middle {
-  grid-area: m_title;
-}
-
-.column_middle1 {
-  grid-area: m_content1;
-}
-.column_middle2 {
-  grid-area: m_content2;
-}
-.column_middle3 {
-  grid-area: m_content3;
-}
-*/
 
 button:focus {
   outline: none;
@@ -351,11 +308,6 @@ button:disabled {
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
   }
-/*
-  .books {
-    width: 230px;
-    height: 230px;
-  } */
 
   .header_text {
     width: 364px;
@@ -374,8 +326,6 @@ button:disabled {
 }
 
 @media (width >= 768px) {
-
-
   .header {
     height: 100vh;
     min-height: 1024px;
@@ -398,7 +348,6 @@ button:disabled {
   .main_text_middle {
     display: grid;
     grid-template-columns:  1fr;
-    /*gap: 10px;*/
   }
  
   .main_title_middle {
@@ -415,11 +364,6 @@ button:disabled {
   .header__theme-menu-list {
     margin-top: 173px;
   }
-
- /* .books {
-    width: 315px;
-    height: 315px;
-  }*/
 }
 
 @media (width >= 1024px) {
@@ -452,16 +396,6 @@ button:disabled {
     margin: 0;
     justify-content: center;
   }
-}  /*
-  @media (min-width: 1024px) {
-    .main_text_middle {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-areas:
-        "m_title . ."
-        "m_content1 m_content2 m_content3";
-    }
-  } */
+} 
 
  

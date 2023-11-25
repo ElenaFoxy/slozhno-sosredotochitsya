@@ -373,6 +373,10 @@ button:disabled {
 }
 
 @media (width >= 768px) {
+  .header {
+    height: 100vh;
+    min-height: 1024px;
+  }
 
   .main_text {
     display: grid;
@@ -401,6 +405,10 @@ button:disabled {
     margin-top: 107px;
   }
 
+  .header__theme-menu-list {
+    margin-top: 173px;
+  }
+
  /* .books {
     width: 315px;
     height: 315px;
@@ -408,6 +416,11 @@ button:disabled {
 }
 
 @media (width >= 1024px) {
+  .header {
+    height: 100vh;
+    min-height: 768px;
+  }
+  
   .main_article_middle {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

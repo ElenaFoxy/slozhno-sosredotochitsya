@@ -310,6 +310,7 @@ button:disabled {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
+
   .card_img {
     height: 100%;
     object-fit: cover;
@@ -373,9 +374,15 @@ button:disabled {
 }
 
 @media (width >= 768px) {
+
+
   .header {
     height: 100vh;
     min-height: 1024px;
+  }
+
+  .header_title{
+   margin-top: 175px;
   }
 
   .main_text {

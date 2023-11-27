@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark light">
     <title>Сложно сосредоточиться</title>
+    <link rel="stylesheet" href="./styles/globals.css">
     <link rel="stylesheet" href="./styles/variables.css">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/dark.css">
     <link rel="stylesheet" href="./styles/light.css"> 
     <link rel="stylesheet" href="./fonts/fonts.css">
-    <link rel="stylesheet" href="./styles/globals.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   </head>
   <body class="page">
@@ -19,8 +19,8 @@
     <header class="header decorated-zone">
       <!-- REC -->
       <div>
-      <p class="header_rec" aria-hidden="true"> 
-      </p>
+      <span class="header_decor" aria-hidden="true"> 
+      </span>
       <!-- Меню -->
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
@@ -70,7 +70,7 @@
           Особенно сложно сосредоточиться, когда задач много и все они — важные. 
           Где же легендарная многозадачность, когда она так нужна вам 
           (и всем нанимающим менеджерам этого мира)? А дело в том, что её просто не существует. 
-          Исследователи <span class="main_link">выяснили</span>, что мозгу тяжело концентрироваться даже на двух делах одновременно. 
+          Исследователи <a href="#0" class="main_link">выяснили</a>, что мозгу тяжело концентрироваться даже на двух делах одновременно. 
           А когда в поле внимания попадает несколько важных задач, 
           организм паникует и выделяет кортизол и адреналин — «гормоны стресса». 
           Из-за этого мы работаем невнимательно: ошибаемся и быстро устаём.
@@ -91,7 +91,7 @@
       <section class="main_text main_text_middle">
         <h2 class="main_title main_title_middle">Что снижает концентрацию внимания?</h2>
         <div class="main_article_middle">
-          <div class="column_middle1">
+          <div>
           <h3 class="main_accent title_decor">Многозадачность</h3>
           <p>
             Как концентрация может снижаться из-за… концентрации? Любая стрессовая ситуация
@@ -101,7 +101,7 @@
             Концентрация — мышца, и она может не выдержать, если не давать ей отдохнуть.
           </p>
         </div>
-        <div class="column_middle2">
+        <div>
           <h3 class="main_accent title_decor">Еда</h3>
           <p>
             «Быстрые углеводы» — сахар, белый хлеб, сладости — молниеносно доставляют в мозг 
@@ -111,7 +111,7 @@
             мы чувствуем усталость и сонливость. И хотим ещё больше быстрых углеводов.
           </p>
         </div>
-        <div class="column_middle3">
+        <div>
           <h3 class="main_accent title_decor">Гаджеты</h3>
           <p>
             Да-да, это та самая ситуация, когда на экране ноутбука — код, в наушниках — 
@@ -143,7 +143,7 @@
           которые тоже очень сильно отвлекают. Подойдёт тихая, спокойная, умеренно-ритмичная. 
           Можно вообще попробовать включить плейлист в «белым шумом» или нейромузыкой.</p>
           <h4 class="main_dop_accent title_decor">Прогуляйтесь</h4>
-        <p>Или даже пробегитесь. Лучше найти парк или лес: один эксперимент <span class="main_link">показал</span>, 
+        <p>Или даже пробегитесь. Лучше найти парк или лес: один эксперимент <a href="#0" class="main_link">показал</a>, 
           что созерцание природы повышает концентрацию, в то время как после 
           просмотра городских пейзажей она наоборот понижается. 
           Можно совместить прогулку с физическими упражнениями или бегом — 
@@ -162,9 +162,9 @@
         </div>
       </section>
       <section class="main_picture">
-        <h3 class="main_accent title_decor">А можно в картинках?</h3>
+        <h2 class="main_accent title_decor">А можно в картинках?</h2>
         <ul class="picture-list">
-          <li class="sunset">
+          <li class="picture-list-image">
             <img
             class="card_img"
             src="./images/sunset.png"
@@ -172,7 +172,7 @@
             loading="lazy"
             />
           </li>
-          <li class="ice-cream">
+          <li class="picture-list-image">
             <img
             class="card_img"
             src="./images/ice-cream.png"
@@ -180,7 +180,7 @@
             loading="lazy"
             />
           </li>
-          <li class="tape">
+          <li class="picture-list-image">
             <img
             class="card_img"
             src="./images/tape.png"
@@ -188,7 +188,7 @@
             loading="lazy"
             />
           </li>
-          <li class="books">
+          <li class="picture-list-image">
             <img
             class="card_img"
             src="./images/books.png"
@@ -196,7 +196,7 @@
             loading="lazy"
             />
           </li>
-          <li class="street">
+          <li class="picture-list-image">
             <img
             class="card_img"
             src="./images/street.png"
@@ -208,7 +208,7 @@
       </section>
     </main>
     <footer class="footer decorated-zone">
-      <p class="footer_title">focus</p>
+      <h1 class="footer_title">focus</h1>
     </footer>
     <!-- не трогать -->
     <script src="./scripts/script.js"></script>

@@ -11,43 +11,22 @@
   --text-color: #F1B2CE;
   --focus-color:  #DB00FF;
   --bg-image: url(../images/cover-image-dark.png);
+  --rec-color:  #FF0070;
 }
 
-
-/* Остальные стили */
+/* Остальные стили */ 
 
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  .header_rec {
-    position: relative; 
-    margin: 0;
-    margin-right: 28px;
-    color: var(--title-color, #FF0070);
-    font-family: var(--main-font, sans-serif);
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 25px;
-    letter-spacing: 0em;
-    text-align: end;
-  }
-  
-  .header_rec::before {
-    content:"REC";
-    color: var(--title-color, #FF0070);
-  }
-  .header_rec::after {
-    content:"";
-    position: absolute;
-    inline-size: 9px;
-    block-size: 9px;
-    margin: 8px 8px 0px 10px;
-    background-color: var(--title-color, #FF0070);
-    border-radius: 50%;
-    box-shadow: 0px 0px 4px #FF0070;
-    align-items: center;
-    justify-content: center;
-  }
+  --main-font: 'IBM Plex mono';
+  --bg-color:  #000028;
+  --title-color: #FF0070;
+  --accent-color: #FF0070;
+  --text-color: #F1B2CE;
+  --focus-color:  #DB00FF;
+  --bg-image: url(../images/cover-image-dark.png);
+  --rec-color:  #FF0070;
 }

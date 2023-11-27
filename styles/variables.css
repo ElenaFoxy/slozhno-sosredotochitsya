@@ -3,12 +3,28 @@
   и их переопределение под различные устройства
 */
 
-:root {
-  --main-font: 'IBM Plex mono';
-  --bg-color:  #000028;
-  --title-color: #FF0070;
-  --accent-color: #FF0070;
-  --text-color: #F1B2CE;
-  --focus-color:  #DB00FF;
-  --bg-image: url(../images/cover-image-dark.png);
-}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-font: 'IBM Plex mono';
+    --bg-color:  #000028;
+    --title-color: #FF0070;
+    --accent-color: #FF0070;
+    --text-color: #F1B2CE;
+    --focus-color:  #DB00FF;
+    --bg-image: url(../images/cover-image-dark.png);
+    --rec-color: #FF0070;
+  }
+} 
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-font: 'IBM Plex mono';
+    --bg-color: #ffeef6;
+    --title-color: #353430;
+    --accent-color: #FF8DCB;
+    --text-color: #353430;
+    --focus-color:  #FFC2E6;
+    --bg-image: url(../images/cover-image-light.png);
+    --rec-color: var(--bg-color);
+  }
+} 

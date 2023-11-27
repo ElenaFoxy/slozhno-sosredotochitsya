@@ -52,7 +52,7 @@
   position: relative;
   display: flex; 
   flex-direction: column;
-  min-height: 668px;
+  min-height: 648px;
 }
 
 .decorated-zone::after {
@@ -212,7 +212,7 @@
   position: relative;
   display: flex;
   height: 100vh;
-  min-height: 668px;
+  min-height: 648px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -301,10 +301,10 @@ button:disabled {
 
 @media (width >= 768px) {
   .header {
-    min-height: 1024px;
+    min-height: 1004px;
   }
 
-  .header_title{
+  .header_title {
    margin-top: 175px;
   }
 
@@ -341,7 +341,7 @@ button:disabled {
 
 @media (width >= 1024px) {
   .header {
-    min-height: 768px;
+    min-height: 748px;
   }
 
   .main_article_middle {

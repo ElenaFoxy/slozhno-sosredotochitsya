@@ -52,6 +52,7 @@
   position: relative;
   display: flex; 
   flex-direction: column;
+  height: 100vh;
   min-height: 648px;
 }
 
@@ -137,6 +138,12 @@
   font-size: 18px;
   margin-top: 50px;
   line-height: 23.4px;
+}
+
+.main_article {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .main_accent {
@@ -306,6 +313,7 @@ button:disabled {
   .main_picture {
     gap: 0px;
   }
+}
 
 @media (width >= 768px) {
   .header {

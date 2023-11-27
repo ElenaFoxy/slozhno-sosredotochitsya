@@ -1,50 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 /* темная мобильная тема*/
-/*
-:root {
-  --main-font: 'IBM Plex mono';
-  --bg-color:  #000028;
-  --title-color: #FF0070;
-  --accent-color: #FF0070;
-  --text-color: #F1B2CE;
-  --focus-color:  #DB00FF;
-  --bg-image: url(../images/cover-image-dark.png);
-  --rec-color: #FF0070;
-} */
-/*
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-} */
-
-/*
-@media (prefers-color-scheme: dark) {
-  body {
-    --title-color: #FF0070;
-    --bg-color:  #000028;
-    --accent-color: #FF0070;
-    --text-color: #F1B2CE;
-    --focus-color:  #DB00FF;
-    --bg-image: url(../images/cover-image-dark.png);
-  }
-} 
-
-@media (prefers-color-scheme: light) {
-  body {
-    --title-color: #353430;
-    --accent-color: #FF8DCB;
-    --text-color: #353430;
-    --focus-color:  #FFC2E6;
-    --bg-image: url(../images/cover-image-light.png);
-    --bg-color:  #ffeef6;  
-  }
-} */
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
@@ -97,8 +52,7 @@ body {
   position: relative;
   display: flex; 
   flex-direction: column;
-  height: 100vh;
-  min-height: 667px;
+  min-height: 668px;
 }
 
 .decorated-zone::after {
@@ -258,7 +212,7 @@ body {
   position: relative;
   display: flex;
   height: 100vh;
-  min-height: 667px;
+  min-height: 668px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -294,7 +248,6 @@ button:disabled {
     object-position: center;
   }
 
-  /*.sunset */
   .picture-list-image:nth-child(1) {
     grid-column: 1 / span 2;
   }
@@ -311,7 +264,7 @@ button:disabled {
      grid-column-end: 2;
      grid-row-start: 2;
      grid-row-end: 4;
-}
+  }
 
   .picture-list-image:nth-child(5) {
     grid-column-start: 2;
@@ -348,7 +301,6 @@ button:disabled {
 
 @media (width >= 768px) {
   .header {
-    height: 100vh;
     min-height: 1024px;
   }
 
@@ -389,7 +341,6 @@ button:disabled {
 
 @media (width >= 1024px) {
   .header {
-    height: 100vh;
     min-height: 768px;
   }
 

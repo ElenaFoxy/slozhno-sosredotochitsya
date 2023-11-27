@@ -145,6 +145,11 @@
   margin-bottom: 10px;
 }
 
+.main_accent:not(:first) {
+  margin-top: 10px;
+}
+
+
 .main_dop_accent {
   font-weight: 400;
   margin-top: 20px;
@@ -297,7 +302,10 @@ button:disabled {
   .header_text {
     width: 355px;
   }
-}
+  
+  .main_picture {
+    gap: 0px;
+  }
 
 @media (width >= 768px) {
   .header {

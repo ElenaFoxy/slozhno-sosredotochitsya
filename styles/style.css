@@ -312,6 +312,7 @@ button:disabled {
     display: grid;
     grid-template-columns: 1fr 472px;
     padding-right: 20px;
+    margin-bottom: -10px;
   }
   
   .header_text {
@@ -383,7 +384,7 @@ button:disabled {
   .main_title_middle {
     display: grid;
     grid-template-columns: 1fr 649px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: -10px;
   }
 

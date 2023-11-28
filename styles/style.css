@@ -317,9 +317,17 @@ button:disabled {
   .main_picture {
     gap: 0px;
   }
+
+  .picture-list-image:not(:first) {
+    margin-top: 10px;
+  }
 }
 
 @media (width >= 768px) {
+  .page{
+    padding: 20px;
+  }
+
   .header {
     height: 1004px;
     /*height: 100vh;*/

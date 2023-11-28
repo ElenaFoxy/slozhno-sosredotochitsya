@@ -221,7 +221,7 @@
 .footer {
   position: relative;
   display: flex;
-  /*height: 100vh;*/
+  height: 100vh;
   height: 648px;
   flex-direction: column;
   justify-content: center;
@@ -317,10 +317,10 @@ button:disabled {
   .main_picture {
     gap: 0px;
   }
-
+/*
   .card_img {
     margin-bottom: 10px;
-  }
+  }*/
 }
 
 @media (width >= 768px) {
@@ -437,14 +437,21 @@ button:disabled {
     height: 748px;
   }
 
+  .main_title_middle {
+    display: grid;
+    grid-template-columns: 1fr 649px;
+  }
+
   .main_article_middle {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   } 
-  .main_title_middle {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+  .text_edge {
+      display: grid;
+      grid-template-columns: 1fr 649px;
+      gap: 10px;
   }
 
   .header_text {
@@ -475,6 +482,7 @@ button:disabled {
      grid-auto-flow: row;
      gap: 20px;
    }
+
    
 } 
 

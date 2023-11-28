@@ -311,7 +311,6 @@ button:disabled {
   .main_title_middle {
     display: grid;
     grid-template-columns: 1fr 472px;
-    margin-top: 30px;
     padding-right: 20px;
   }
   
@@ -368,6 +367,10 @@ button:disabled {
     grid-auto-flow: row;
     gap: 20px;
     grid-auto-flow: column dense;
+  }
+
+  .main_picture {
+    margin-top: 80px;;
   }
 }
 

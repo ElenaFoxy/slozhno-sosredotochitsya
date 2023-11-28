@@ -53,7 +53,7 @@
   display: flex;
   flex-direction: column;
   /*height: 100vh;*/
-  height: 648px; 
+  height: 648px;
 }
 
 .decorated-zone::after {
@@ -205,7 +205,7 @@
   display: grid;
   object-position: center;
   gap: 10px;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .card_img {
@@ -251,7 +251,7 @@ button:disabled {
   .footer_title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
-
+/*
   .card_img {
     height: 100%;
     object-fit: cover;
@@ -297,6 +297,7 @@ button:disabled {
     gap: 20px;
     grid-auto-flow: column dense;
   }
+  */
 
   .header_text {
     width: 364px;
@@ -358,6 +359,54 @@ button:disabled {
     margin-top: 173px;
   }
 
+  .card_img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .picture-list-image:nth-child(1) {
+    grid-column: 1 / span 2;
+  }
+  
+  .picture-list-image:nth-child(2) {
+     grid-column-start: 3;
+     grid-column-end: 4;
+     grid-row-start: 1;
+     grid-row-end: 3;
+  } 
+
+  .picture-list-image:nth-child(3) {
+     grid-column-start: 1;
+     grid-column-end: 2;
+     grid-row-start: 2;
+     grid-row-end: 4;
+  }
+  .picture-list-image:nth-child(4) {
+    width: 230px;
+    height: 230px;
+ }
+
+  .picture-list-image:nth-child(5) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+  .picture-list {
+    display: grid;
+    grid-template-columns: repeat(3, 230px);
+    grid-template-rows: repeat(3, 230px);
+    grid-auto-columns: 230px;
+    grid-auto-rows: 230px;
+    grid-auto-flow: row;
+    gap: 20px;
+    grid-auto-flow: column dense;
+  }
+
+
+/*
   .picture-list-image:nth-child(4) {
     width: 315px;
     height: 315px;
@@ -371,7 +420,7 @@ button:disabled {
      grid-auto-rows: 315px;
      grid-auto-flow: row;
      gap: 20px;
-   }
+   }*/
 }
 
 @media (width >= 1024px) {
@@ -404,6 +453,20 @@ button:disabled {
     margin: 0;
     justify-content: center;
   }
+  .picture-list-image:nth-child(4) {
+    width: 315px;
+    height: 315px;
+ }
+
+  .picture-list {
+     display: grid;
+     grid-template-columns: repeat(3, 315px);
+     grid-template-rows: repeat(3, 315px);
+     grid-auto-columns: 315px;
+     grid-auto-rows: 315px;
+     grid-auto-flow: row;
+     gap: 20px;
+   }
 } 
 
  

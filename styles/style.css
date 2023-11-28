@@ -475,18 +475,7 @@ button:disabled {
      grid-auto-flow: row;
      gap: 20px;
    }
-
-   .main_text {
-    display: grid;
-    grid-template-columns: 1fr 649px;
-    gap: 10px;
-  }
-
-  .main_title_middle {
-    display: grid;
-    grid-template-columns: 1fr 649px;
-    margin-top: 20px;
-  }
+   
 } 
 
  

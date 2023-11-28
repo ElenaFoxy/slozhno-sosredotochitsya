@@ -228,7 +228,7 @@
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 button:focus {
@@ -282,7 +282,7 @@ button:disabled {
   }
 
   .header, .footer {
-    height: 1004px;
+    height: 984px;
     /*height: 100vh;*/
   }
 
@@ -304,6 +304,7 @@ button:disabled {
   .main_text_middle {
     display: grid;
     grid-template-columns:  1fr;
+    margin-bottom: 10px;
   }
  
   .main_title_middle {
@@ -373,7 +374,7 @@ button:disabled {
 @media (width >= 1024px) {
   .header, .footer {
    /* height: 100vh;*/
-    height: 748px;
+    height: 728px;
   }
 
   .main_title_middle {

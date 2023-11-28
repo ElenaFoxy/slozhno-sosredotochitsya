@@ -13,7 +13,6 @@
   --bg-image: url(../images/cover-image-light.png);
   --rec-color: var(--bg-color);
 }
-
 /* Остальные стили */
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
@@ -21,7 +20,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --main-font: 'IBM Plex mono';
-  --bg-color:  #ffeef6; 
+  --bg-color:  #ffeef6;
   --title-color: #353430;
   --accent-color: #FF8DCB;
   --text-color: #353430;

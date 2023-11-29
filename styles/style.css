@@ -154,14 +154,14 @@
   margin-bottom: 10px;
 }
 
-/*.main_accent:first-child {
+.main_accent:first-child {
   margin-bottom: 0px;
-}*/
+}
 
 .main_dop_accent {
   font-weight: 400;
   margin-bottom: 10px;
- /* margin-top: 10px;*/
+  margin-top: 10px;
 }
 
 .title_decor {
@@ -379,7 +379,7 @@ button:disabled {
   .main_dop_accent {
     margin-top: 10px;
   }
-  
+
   .main_accent:first-child {
     margin-bottom: 0px;
   }

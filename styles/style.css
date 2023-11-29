@@ -372,6 +372,10 @@ button:disabled {
     margin-top: 80px;
   }
 
+ div > .main_accent:first-child {
+   margin-bottom: 0px;
+  }
+
 }
 
 @media (width >= 1024px) {

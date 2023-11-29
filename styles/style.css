@@ -6,7 +6,7 @@
   min-inline-size: 375px;
   block-size: 100%;
   color: var(--title-color, #FF0070);
-  font-family: var(--main-font, IBM Plex);
+  font-family: var(--main-font, monospace);
   background-image: var(--bg-image, url(../images/cover-image-dark.png));
   background-position: center;
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@
 .header_decor {
   position: relative;
   color: var(--rec-color);
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -52,8 +52,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  /*height: 100vh;*/
-  height: 648px;
+  height: 100vh;
+  min-height: 648px;
 }
 
 .decorated-zone::after {
@@ -79,10 +79,12 @@
 }
 
 .header__theme-menu-button {
+  width: 70px;
+  height: 26px;
   border: none;
   color: var(--title-color);
   background-color: transparent;
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -94,7 +96,7 @@
   flex-direction: column;
   list-style: none;
   color: var(--text-color, #F1B2CE);
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-size: 18px;
   font-weight: 400;
   line-height: 25px;
@@ -106,7 +108,7 @@
 
 .header_title, .footer_title {
   color: var(--focus-color,#DB00FF);
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-style: normal;
   font-weight: 700;
   line-height: 82.5%; /* 95.7px */
@@ -163,7 +165,7 @@
 
 .title_decor {
   color: #000028;
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-size: 18px;
   font-style: normal;
   line-height: 23.4px; /* 130% */
@@ -194,7 +196,7 @@
 
 .main_title {
   color: var(--title-color);
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -221,8 +223,8 @@
 .footer {
   position: relative;
   display: flex;
-  /*height: 100vh;*/
-  height: 648px;
+  height: 100vh;
+  min-height: 648px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -233,10 +235,14 @@
 
 button:focus {
   outline: none;
-  text-decoration: underline;
+  border-bottom: 1px solid var(--title-color);
 }
 
-button:active, button:hover, button:default {
+button:hover {
+  outline: 1px solid rgba(255, 0, 112, 0.40);
+}
+
+button:active, button:default {
   outline: 1px solid var(--title-color);
 }
 button:disabled {
@@ -282,8 +288,7 @@ button:disabled {
   }
 
   .header, .footer {
-    height: 984px;
-    /*height: 100vh;*/
+    min-height: 984px;
   }
 
   .header_title {
@@ -361,8 +366,8 @@ button:disabled {
 
   .picture-list {
     display: grid;
-    grid-template-columns: repeat(3, 230px);
-    grid-template-rows: repeat(3, 230px);
+    grid-template-columns: repeat (3, 230px);
+    grid-template-rows: 192px 230px 318px;
     grid-auto-columns: 230px;
     grid-auto-rows: 230px;
     grid-auto-flow: row;
@@ -371,14 +376,13 @@ button:disabled {
   }
 
   .main_picture {
-    margin-top: 80px;;
+    margin-top: 80px;
   }
 }
 
 @media (width >= 1024px) {
   .header, .footer {
-   /* height: 100vh;*/
-    height: 728px;
+    min-height: 728px;
   }
 
   .main_title_middle {
@@ -422,7 +426,7 @@ button:disabled {
   .picture-list {
      display: grid;
      grid-template-columns: repeat(3, 315px);
-     grid-template-rows: repeat(3, 315px);
+     grid-template-rows: 260px 315px 428px;
      grid-auto-columns: 315px;
      grid-auto-rows: 315px;
      grid-auto-flow: row;

@@ -207,6 +207,10 @@
   margin-top: 40px;
 }
 
+div > .main_accent:first-child {
+  margin-bottom: 0px;
+ }
+
 .card_img {
   width: 100%;
   object-fit: cover;
@@ -370,10 +374,6 @@ button:disabled {
 
   .main_picture {
     margin-top: 80px;
-  }
-
- div > .main_accent:first-child {
-   margin-bottom: 0px;
   }
 
 }

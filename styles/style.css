@@ -65,7 +65,7 @@
   grid-template-rows: 1fr min-content 1fr;
   /*height: 100hmin;*/
   min-block-size: 100vh;
-  min-height: 668px;
+  min-height: 648px;
 }
 
 
@@ -245,7 +245,7 @@ div > .main_accent:first-child {
   display: flex;
   /*height: 100hmin;*/
   min-block-size: 100vh;
-  min-height: 668px;
+  min-height: 648px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -309,7 +309,7 @@ button:disabled {
   }
 
   .header, .footer {
-    min-height: 1024px;
+    min-height: 984px;
   }
   
   .footer {
@@ -400,7 +400,7 @@ button:disabled {
 
 @media (width >= 1024px) {
   .header, .footer {
-    min-height: 768px;
+    min-height: 728px;
   }
 
   .main_title_middle {

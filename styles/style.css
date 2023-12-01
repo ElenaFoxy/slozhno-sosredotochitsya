@@ -62,7 +62,7 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr min-content 1fr;
-  /*height: 100vh;*/
+  height: 100hmin;
   /*block-size: 100vh;*/
   min-height: 648px;
 }
@@ -241,8 +241,7 @@ div > .main_accent:first-child {
 .footer {
   position: relative;
   display: flex;
- /* height: 100vh;
-  min-height: 648px;*/
+  height: 100hmin;
   min-height: 648px;
   flex-direction: column;
   justify-content: center;

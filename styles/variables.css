@@ -12,7 +12,7 @@
   --bg-image: url(../images/cover-image-dark.png);
   --rec-color: #FF0070;
 }
-
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --main-font: 'IBM Plex mono';
@@ -37,4 +37,4 @@
     --bg-image: url(../images/cover-image-light.png);
     --rec-color: var(--bg-color);
   }
-} 
+} */

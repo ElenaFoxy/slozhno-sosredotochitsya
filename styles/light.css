@@ -13,7 +13,10 @@
   --bg-image: url(../images/cover-image-light.png);
   --rec-color: var(--bg-color);
 }
+
 /* Остальные стили */
+
+
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,

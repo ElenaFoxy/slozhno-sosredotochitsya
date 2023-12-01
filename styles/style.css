@@ -56,7 +56,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr min-content 1fr;
   height: 100vh;
-  max-height: 648px;
+  max-height: calc(100vh - 20px);
   /*min-block-size: calc (100vh - 20px);
   /*block-size: 648px;*/
 }
@@ -231,7 +231,7 @@ div > .main_accent:first-child {
   position: relative;
   display: flex;
   height: 100vh;
-  max-height: 648px;
+  max-height: calc(100vh - 20px);
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -293,7 +293,7 @@ button:disabled {
   }
 
   .header, .footer {
-    max-height: 984px;
+    max-height: calc(100vh - 40px);
   }
   
   .footer {
@@ -381,9 +381,9 @@ button:disabled {
 }
 
 @media (width >= 1024px) {
-  .header, .footer {
-    max-height: 728px;
-  }
+/*  .header, .footer {
+    max-height: calc(100vh - 40px);
+  }*/
 
   .main_title_middle {
     display: grid;

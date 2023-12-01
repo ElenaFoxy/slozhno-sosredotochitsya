@@ -64,7 +64,7 @@
   grid-template-rows: 1fr min-content 1fr;
   height: 100hmin;
   /*block-size: 100vh;*/
-  min-height: 648px;
+  min-height: 668px;
 }
 
 
@@ -306,7 +306,7 @@ button:disabled {
   }
 
   .header, .footer {
-    min-height: 984px;
+    min-height: 1024px;
   }
   
   .footer {
@@ -397,7 +397,7 @@ button:disabled {
 
 @media (width >= 1024px) {
   .header, .footer {
-    min-height: 728px;
+    min-height: 768px;
   }
 
   .main_title_middle {
@@ -406,8 +406,12 @@ button:disabled {
     margin-bottom: -10px;
   }
 
-  .main_title {
+  .main_title_middle {
     margin-top: 30px;
+  }
+
+  .main_picture {
+    margin-top: 80px;
   }
 
   .main_article_middle {

@@ -3,6 +3,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  box-sizing: border-box;
   min-inline-size: 375px;
   block-size: 100%;
   color: var(--title-color, #FF0070);
@@ -13,7 +14,7 @@
   background-size: cover;
   background-attachment: fixed;
   background-color: var(--bg-color);
- 
+  margin: 0px auto;
   padding: 10px;
 }
 
@@ -49,14 +50,15 @@
 }
 
 .header {
+  box-sizing: border-box;
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr min-content 1fr;
   height: 100vh;
-  min-height: 668px;
-  /*min-block-size: 100vh;
-  block-size: 648px;*/
+  max-height: 648px;
+  /*min-block-size: calc (100vh - 20px);
+  /*block-size: 648px;*/
 }
 
 
@@ -229,12 +231,10 @@ div > .main_accent:first-child {
   position: relative;
   display: flex;
   height: 100vh;
-  min-height: 668px;
+  max-height: 648px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
   margin-top: 40px;
 }
 
@@ -293,7 +293,7 @@ button:disabled {
   }
 
   .header, .footer {
-    min-height: 1024px;
+    max-height: 984px;
   }
   
   .footer {
@@ -382,7 +382,7 @@ button:disabled {
 
 @media (width >= 1024px) {
   .header, .footer {
-    min-height: 768px;
+    min-height: 728px;
   }
 
   .main_title_middle {

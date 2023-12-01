@@ -306,7 +306,7 @@ button:disabled {
   }
 
   .header, .footer {
-    min-height: 1004px;
+    min-height: 984px;
   }
   
   .footer {
@@ -397,7 +397,7 @@ button:disabled {
 
 @media (width >= 1024px) {
   .header, .footer {
-    min-height: 748px;
+    min-height: 728px;
   }
 
   .main_title_middle {

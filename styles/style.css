@@ -53,8 +53,9 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr min-content 1fr;
-  height: 100vh;
-  min-height: 668px;
+  height: 100hv;
+  min-height: 100%;
+  
   /*min-block-size: 100vh;
   block-size: 648px;*/
 }
@@ -229,7 +230,7 @@ div > .main_accent:first-child {
   position: relative;
   display: flex;
   height: 100vh;
-  min-height: 668px;
+  min-height: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -291,10 +292,10 @@ button:disabled {
   .page {
     padding: 20px;
   }
-
+/*
   .header, .footer {
     min-height: 1024px;
-  }
+  } */
   
   .footer {
    margin-top: 60px;
@@ -381,9 +382,9 @@ button:disabled {
 }
 
 @media (width >= 1024px) {
-  .header, .footer {
+  /*.header, .footer {
     min-height: 768px;
-  }
+  }*/
 
   .main_title_middle {
     display: grid;

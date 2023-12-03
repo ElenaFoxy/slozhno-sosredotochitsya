@@ -290,9 +290,9 @@ button:disabled {
     padding: 20px;
   }
 
-  .header, .footer {
+ /* .header, .footer {
     max-height: calc(100vh - 40px);
-  }
+  } */
   
   .footer {
    margin-top: 60px;

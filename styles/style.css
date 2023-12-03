@@ -49,11 +49,13 @@
 }
 
 .header {
+  box-sizing: border-box;
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr min-content 1fr;
   height: 100vh;
+  block-size: 100vh;
  /* height: calc(100vh - 20px);*/
   /*min-block-size: calc (100vh - 20px);
   /*block-size: 648px;*/

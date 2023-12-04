@@ -3,8 +3,6 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  min-inline-size: 375px;
-  block-size: 100%;
   color: var(--title-color, #FF0070);
   font-family: var(--main-font, monospace);
   background-image: var(--bg-image, url(../images/cover-image-dark.png));
@@ -14,7 +12,7 @@
   background-attachment: fixed;
   background-color: var(--bg-color);
   margin: 0px auto;
-  padding: 10px;
+  /*padding: 10px;*/
 }
 
 .header_decor {
@@ -53,9 +51,11 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr min-content 1fr;
+  grid-template-rows: 1fr max-content 1fr;
   height: 100vh;
-  block-size: 100vh;
+  padding: 10px;
+  /*block-size: 100vh;*/
+
  /* height: calc(100vh - 20px);*/
   /*min-block-size: calc (100vh - 20px);
   /*block-size: 648px;*/
@@ -65,8 +65,8 @@
 .decorated-zone::after {
   content: "";
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 10px;
+  right: 10px;
   inline-size: 25px;
   block-size: 25px;
   border-top: 1px solid var(--title-color);
@@ -76,8 +76,8 @@
 .decorated-zone::before {
   content: "";
   position: absolute;
-  bottom: 0px;
-  left: 0px;
+  bottom: 10px;
+  left: 10px;
   inline-size: 25px;
   block-size: 25px;
   border-bottom: 1px solid var(--title-color);
@@ -135,6 +135,9 @@
   font-weight: 700;
   line-height: 23.4px;
 }
+main {
+  padding: 10px;
+}
 
 .main_text {
   display: grid;
@@ -142,11 +145,13 @@
   gap: 20px;
   color: var(--text-color);
   font-size: 18px;
-  margin-top: 50px;
+  margin-top: 40px;
+  margin-bottom: 50px;
   line-height: 23.4px;
   font-style: normal;
   font-weight: 400;
 }
+
 
 .main_article {
   display: flex;
@@ -236,6 +241,7 @@ div > .main_accent:first-child {
   justify-content: center;
   align-items: center;
   margin-top: 40px;
+  padding: 0px 10px 10px 10px;
 }
 
 button:focus {

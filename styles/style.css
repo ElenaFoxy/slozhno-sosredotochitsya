@@ -12,7 +12,8 @@
   background-attachment: fixed;
   background-color: var(--bg-color);
   margin: 0px auto;
-  /*padding: 10px;*/
+  padding: 10px;
+  height: 100vh;
 }
 
 .header_decor {
@@ -52,8 +53,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr max-content 1fr;
-  height: 100vh;
-  padding: 10px;
+  height: 100%;
+  
   /*block-size: 100vh;*/
 
  /* height: calc(100vh - 20px);*/
@@ -65,8 +66,8 @@
 .decorated-zone::after {
   content: "";
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 0px;
+  right: 0px;
   inline-size: 25px;
   block-size: 25px;
   border-top: 1px solid var(--title-color);
@@ -76,8 +77,8 @@
 .decorated-zone::before {
   content: "";
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: 0px;
+  left: 0px;
   inline-size: 25px;
   block-size: 25px;
   border-bottom: 1px solid var(--title-color);
@@ -135,9 +136,6 @@
   font-weight: 700;
   line-height: 23.4px;
 }
-main {
-  padding: 10px;
-}
 
 .main_text {
   display: grid;
@@ -145,13 +143,11 @@ main {
   gap: 20px;
   color: var(--text-color);
   font-size: 18px;
-  margin-top: 40px;
-  margin-bottom: 50px;
+  margin-top: 50px;
   line-height: 23.4px;
   font-style: normal;
   font-weight: 400;
 }
-
 
 .main_article {
   display: flex;
@@ -235,13 +231,12 @@ div > .main_accent:first-child {
 .footer {
   position: relative;
   display: flex;
-  height: 100vh;
+  height: 100%;
   /*height: calc(100vh - 20px);*/
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 40px;
-  padding: 0px 10px 10px 10px;
 }
 
 button:focus {

@@ -12,6 +12,7 @@
   --focus-color:  #DB00FF;
   --bg-image: url(../images/cover-image-dark.png);
   --rec-color:  #FF0070;
+  --hover-color: rgba(255, 0, 112, 0.40);
 }
 
 /* Остальные стили */ 
@@ -30,4 +31,5 @@
   --focus-color:  #DB00FF;
   --bg-image: url(../images/cover-image-dark.png);
   --rec-color:  #FF0070;
+  --hover-color: rgba(255, 0, 112, 0.40);
 }

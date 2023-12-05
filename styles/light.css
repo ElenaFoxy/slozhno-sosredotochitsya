@@ -12,6 +12,7 @@
   --focus-color:  #FFC2E6;
   --bg-image: url(../images/cover-image-light.png);
   --rec-color: var(--bg-color);
+  --hover-color: rgba(50, 49, 45, 0.40);
 }
 
 /* Остальные стили */
@@ -25,6 +26,7 @@
   --focus-color:  #FFC2E6;
   --bg-image: url(../images/cover-image-light.png);
   --rec-color: var(--bg-color);
+  --hover-color: rgba(50, 49, 45, 0.40);
   }
 }
 
@@ -41,4 +43,5 @@
   --focus-color:  #FFC2E6;
   --bg-image: url(../images/cover-image-light.png);
   --rec-color: var(--bg-color);
+  --hover-color: rgba(50, 49, 45, 0.40);
 }

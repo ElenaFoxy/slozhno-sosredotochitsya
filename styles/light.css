@@ -7,9 +7,9 @@
   --main-font: 'IBM Plex mono';
   --bg-color: #ffeef6;
   --title-color: #353430;
-  --accent-color: #FF8DCB; 
+  --accent-color: #FF8DCB;
   --text-color: #353430;
-  --focus-color:  #FFC2E6; 
+  --focus-color:  #FFC2E6;
   --bg-image: url(../images/cover-image-light.png);
   --rec-color: var(--bg-color);
   --hover-color: rgba(50, 49, 45, 0.40);

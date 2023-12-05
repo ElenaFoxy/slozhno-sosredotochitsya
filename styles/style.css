@@ -381,6 +381,9 @@ button:disabled {
     margin-top: 70px;
   }
 
+  .footer {
+    margin-top: 30px;
+  }
 }
 
 @media (width >= 1024px) {
